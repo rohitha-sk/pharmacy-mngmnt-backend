@@ -1,23 +1,30 @@
-user login API
-localhost:5000/api/users/login
-![image](https://github.com/user-attachments/assets/a4709419-cdcd-448f-a34f-06b317c8280c)
+user login API with JWT authentication.
+POST : localhost:5000/api/users/login
+![image](https://github.com/user-attachments/assets/c79e29e2-09b5-4f44-a2cf-e11fa8b669bc)
 
 user registration API
-localhost:5000/api/users/register
-![image](https://github.com/user-attachments/assets/ed9b40db-f49e-41a4-9b2c-9a9bb741f81b)
+POST : localhost:5000/api/users/register
 
-APIs for user management at Admin side.
-create a user
-![image](https://github.com/user-attachments/assets/df068469-d585-4c50-b984-83b13f256b4d)
+User Management APIs
+1. create user
+   POST : localhost:5000/api/users/add_user
+2. get all users
+   GET : localhost:5000/api/users/all_users
+3. get user by ID
+   GET : localhost:5000/api/users/get_user/{id}
+4. update user by ID
+   PUT : localhost:5000/api/users/update_user/
+5. delete user by ID
+   DELETE : localhost:5000/api/users/delete_user/
 
-get all users
-![image](https://github.com/user-attachments/assets/5c280c9e-4ded-4448-93c0-c912b760903b)
-
-get user by ID
-![image](https://github.com/user-attachments/assets/c566d4bd-2822-43a3-82cc-559942e53877)
-
-update user by ID
-![image](https://github.com/user-attachments/assets/3b15f3d9-f1b9-49c1-91bc-046a5218f803)
-
-Delete user by ID
-![image](https://github.com/user-attachments/assets/a479eb2c-bc33-4f06-b837-b7e61a3fda1a)
+Inventory Management APIs
+1. add new item
+   POST : localhost:5000/api/inventory/add_new_item
+2. get all items
+   GET : localhost:5000/api/inventory/all_items
+3. get item by ID
+   GET : localhost:5000/api/inventory/get_item/{id}
+4. update item by ID
+   PUT : localhost:5000/api/inventory/update_item/{id}
+5. delete item by ID
+   DELETE : localhost:5000/api/inventory/delete_item/{id}
